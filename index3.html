@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quét mã 😺</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to bottom right, #fce7f3, #fefcbf);
+            color: #1f2937;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .bouncy-text {
+            text-shadow: 2px 2px 5px rgba(255, 105, 180, 0.5);
+            animation: bounce-text 2s infinite;
+        }
+
+        .qr-image {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .qr-image:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes bounce-text {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-pink-200 to-yellow-200">
+    <!-- Header -->
+    <header class="text-center py-12">
+        <h1 class="text-5xl md:text-7xl font-bold bouncy-text">QUÉT MÃ TRẢ TIỀN LẸ NÈ! 😺</h1>
+        <p class="text-xl md:text-2xl mt-4 text-gray-800">Chuyển khoản lẹ đi, không tớ giả bộ giận nha! 😹💸</p>
+    </header>
+
+    <!-- QR Code Section -->
+    <section class="text-center">
+        <img style="border-radius: 20px;" src="qr.jpg" alt="Mã QR Ngân Hàng" class="mx-auto w-64 h-64 qr-image">
+        <p class="text-lg mt-4 text-gray-700">Mở app ngân hàng, quét mã này là tiền vô túi tớ liền! 😸🚀</p>
+    </section>
+
+</body>
+
+</html>
